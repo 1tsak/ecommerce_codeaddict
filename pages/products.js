@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 // import { getProducts } from './api/product';
+import Image from 'next/image'
 
 function Products(props) {
     return (
@@ -18,7 +19,7 @@ function Products(props) {
                             return (
                                 <div key={item.slug} className="xl:w-1/4 md:w-1/2 p-4" >
                                     <div className="bg-gray-100 p-6 rounded-lg">
-                                        <img className="h-80 rounded w-full object-cover object-center mb-6" src={item.image} alt={item.name} />
+                                        <Image className="h-80 rounded w-full object-cover object-center mb-6" src={item.image} alt={item.name} />
                                         <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">{item.category}</h3>
                                         <h2 className="text-lg text-gray-900 font-medium title-font mb-4">{item.name} </h2>
                                         <span className='hidden bg-red-800 bg-gray-800' />

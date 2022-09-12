@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const NavBar = ({cartQty}) => {
   return (
@@ -8,7 +9,7 @@ const NavBar = ({cartQty}) => {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link href='/'>
             <a className="flex title-font font-medium items-center h-[3rem] w-[3rem] text-gray-900 mb-4 md:mb-0">  
-                <img src="/logo.jpg"/>
+                <Image width={35} height={35} src="/logo.jpg"  alt=''/>
             </a>
           </Link> 
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
